@@ -1,0 +1,65 @@
+<!DocType html>
+<html lang="en">
+
+<head>
+    <style>
+        .section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: lightgrey;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .command {
+            margin-bottom: 20px;
+        }
+
+        .command-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+
+        .command-code {
+            background-color: bisque;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #34495e;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Basic Git Commands</h1>
+    <div class="section">
+        <div class="command"></div>
+        <p class="command-title">1.Configure user details</p>
+        <p class="command-code">git config --global user.name "your username"</p>
+        <p class="command-code">git config --global user.email "your useremail"</p>
+        <p class="command-code">git config --global user.password "your userpassword"</p>
+
+        <div class="command">
+            <p class="command-title">2.Help on git commands</p>
+            <p class="command-code">git --help</p>
+        </div>
+        <p class="command-title">3.Initialise a git repository</p>
+        <p class="command-code">git init</p>
+        <p class="command-title">4.Clone a git repository</p>
+        <p class="command-code">git clone &lt;repository-url&gt;</p>
+        <p class="command-title">5.Add files to staging</p>
+        <p class="command-code">git add &lt;file-name&gt;</p>
+        <p class="command-code">git add .</p>
+        <p class="command-title">6.Commit Changes</p>
+        <p class="command-code">git commit -m "Your commit message"</p>
+        <p class="command-title">6.Push Changes</p>
+        <p class="command-code">git push origin &lt;branch-name&gt;</p>
+    </div>
+
+    </div>
+</body>
+
+</html>
