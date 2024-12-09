@@ -1,0 +1,28 @@
+name: Deploy HTML to GitHub Pages
+
+# Trigger the workflow when pushing to main branch
+
+on:
+  push:
+   branches:
+      - main
+
+  
+  #Define the jobs
+
+  jobs:
+    deploy:
+     runs-on: windows-latest
+
+     steps:
+     #Step:1: Checkout the repository
+     - name: Checkout code
+       uses: actions/checkout@v3
+
+       #step 2: Deploy Github Pages
+       - name: Deploy to GitHub Pages
+         uses: peaceiris/actions-gh-pages@v4
+         with:
+             github_token:${{secrets.GITHUB_TOKEN}}
+             publish_dir: ./Devops/BasicGit.html
+
